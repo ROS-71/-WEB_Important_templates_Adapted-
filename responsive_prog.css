@@ -1,0 +1,65 @@
+
+/* Разрешение менее < 970px */
+@media (max-width: 970px){
+	.service{
+	width: 45%;
+	}
+	.project{
+		width: 91.5%;
+	}
+}
+
+/*Разрешение менее < 992px */
+@media (max-width: 992px){
+	.service{
+		width: 48%;
+		}
+		.project{
+			width: 97%;
+		}
+}
+
+/*Разрешение менее < 922px */
+@media (max-width: 922px){
+	.service{
+		width: 47%;
+		}
+		.project{
+			width: 97%;
+		}
+}
+
+/* Разрешение менее < 767px */
+@media (max-width: 767px){
+	.service{
+		width: 48%;
+		}
+		.project{
+			width: 97%;
+		}
+}
+
+/* Разрешение менее < 650px */
+@media (max-width: 650px){
+	.service{
+		width: 98%;
+		}
+		.project{
+			width: 100%; 		/* Растягиваем блок на всю ширину контейнера */
+			margin: 5px 0;		/* Убираем границы бо бокам, т.е. вплотную к контейнеру */
+		}
+}
+
+/* Разрешение менее < 480px */
+@media (max-width: 480px){
+	.header{
+		font-size: 40px;
+	}
+	.service{
+		width: 96%;
+		}
+		.project{
+			width: 100%;		/* Растягиваем блок на всю ширину контейнера */
+			margin: 5px 0;		/* Убираем границы бо бокам, т.е. вплотную к контейнеру */
+		}
+}

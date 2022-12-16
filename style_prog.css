@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	padding: 20px;
+	background-color: aliceblue;
+}
+.container, .header, .services, .projects{
+	text-align: center;
+	margin: 0 auto;
+}
+.container{
+	max-width: 1200px;
+	border: 1px solid blue;
+	font-size: 0;					/* Убирание промежутков между блоками div которые в контейнере */
+}
+.header{
+	width: 1200px;
+	height: 200px;
+	background-color: bisque;
+	color: black;
+	font-size: 56px;
+	/* Выравнивание строки по центру */
+	display: table-cell;
+	vertical-align: middle;
+}
+.services, .projects{
+	font-size: 0;
+}
+.service{
+	display: inline-block;
+	width: 290px;
+	height: 200px;
+	background-color: blue;
+	margin: 5px;
+	font-size: 16px;
+	color: white;
+	padding: 5px;
+	width: 23%;
+}
+.project{
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	background-color: chartreuse;
+	margin: 5px;
+	font-size: 16px;
+	padding: 5px;
+	width: 32%;
+}
+
+/* ******************************************************** */
+/*   Медиа-запросы Media Queries из файла responsive.css    */
+/* ******************************************************** */
+
+/* Разрешение менее < 970px */
+@media (max-width: 970px){
+	.service{
+	width: 45%;
+	}
+	.project{
+		width: 91.5%;
+	}
+}
+
+/*Разрешение менее < 992px */
+@media (max-width: 992px){
+	.service{
+		width: 48%;
+		}
+		.project{
+			width: 97%;
+		}
+}
+
+/*Разрешение менее < 922px */
+@media (max-width: 922px){
+	.service{
+		width: 47%;
+		}
+		.project{
+			width: 97%;
+		}
+}
+
+/* Разрешение менее < 767px */
+@media (max-width: 767px){
+	.service{
+		width: 48%;
+		}
+		.project{
+			width: 97%;
+		}
+}
+
+/* Разрешение менее < 650px */
+@media (max-width: 650px){
+	.service{
+		width: 98%;
+		}
+		.project{
+			width: 100%; 		/* Растягиваем блок на всю ширину контейнера */
+			margin: 5px 0;		/* Убираем границы бо бокам, т.е. вплотную к контейнеру */
+		}
+}
+
+/* Разрешение менее < 480px */
+@media (max-width: 480px){
+	.header{
+		font-size: 40px;
+	}
+	.service{
+		width: 96%;
+		}
+		.project{
+			width: 100%;		/* Растягиваем блок на всю ширину контейнера */
+			margin: 5px 0;		/* Убираем границы бо бокам, т.е. вплотную к контейнеру */
+		}
+}
