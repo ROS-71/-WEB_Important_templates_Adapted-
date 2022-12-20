@@ -1,0 +1,192 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+	padding: 20px;
+	background-color: rgb(103, 102, 100);
+}
+
+
+/* Внимание!!!
+Работа сладера может быть неверной, если он размещён во внутрь Flex элемента (также проблемы могут быть со всей страницей)
+чтобы это исправить: 
+Flex элементу внутри которого находится сладер, необходимо добавить css параметр min-width: 0 - после чего проблема должна исчезнуть
+*/
+
+.swiper {
+	margin-bottom: 100px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.image-slider__image {
+	text-align: center;
+}
+
+/* Дана возможность изображению уменьшшаться, т.е. встраиваться в ширину контейнера */
+.image-slider__image img{
+	max-width: 100%;
+}
+
+/* **************************** КНОПКИ НАВИГАЦИИ ************************************* */
+/* Изменение стилей кнопок переключения слайдера */
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after{
+	color: aqua;
+	font-size: 80px;
+	
+}
+/* Кнопки при наведении */
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover{
+	text-shadow: 3px 3px 15px #ffffff;
+	font-weight: 700;
+	
+}
+/* *********************************************************************************** */
+
+/* ********************************** БУЛЛЕТЫ **************************************** */
+/* Установка положения буллетов по веритикали и по горизонтали*/
+.swiper .swiper-pagination {
+	/* bottom: 0;
+	left: 0; */
+}
+/* Стилизация буллетов */
+.swiper .swiper-pagination-bullet{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+/* Фракция - стилизация */
+.swiper .swiper-pagination-fraction{
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 600;
+}
+/* Програссбар - стилизация */
+.swiper .swiper-pagination-progressbar-fill{
+	background-color: aquamarine;
+	
+}
+/* *********************************************************************************** */
+/* *********************************** Скролл **************************************** */
+
+/* Стилизация скрола и установка реакции на курсор мыши */
+.swiper .swiper-scrollbar-drag {
+	cursor: pointer;
+	background-color: blue;
+}
+/* Изменение высоты полосы ппрокрутки (скрола) */
+.swiper .swiper-scrollbar-horizontal{
+	height: 10px;
+}
+/* *********************************************************************************** */
+/* ******************************* slidesPerView: 'auto',	***************************** */
+/* *******************************      Автоширина	      ***************************** */
+/* Устанавливаем автоматическую ширину для корректной настройки /slidesPerView: 'auto',/ */
+
+/* 
+
+.swiper .swiper-slide{
+	width: auto;
+} 
+
+*/
+
+
+/* *********************************************************************************** */
+/* ******************************* slidesPerColumn: 2,	***************************** */
+/* *******************************    Мультирядность   ****************************** */
+
+
+/* 
+
+.swiper{
+	height: 1000px;
+}
+.swiper .swiper-slide{
+	height: calc((100% - 30px) / 2);
+	overflow: hidden;
+	
+}  
+
+*/
+
+/* *********************************************************************************** */
+/* ******************************* slide-effect - CUBE,	***************************** */
+/* **************************   эффект сладера - КУБ (3D)   *************************** */
+
+/* 
+
+.swiper{
+	width: 500px;
+} 
+
+*/
+
+
+/* *********************************************************************************** */
+/* ***************************  ЭФФЕКТ ПАРАЛЛАКСА СЛАЙДЕРА	*************************** */
+
+/* Настройка backround-image  - сама картинка указывается в html*/
+.parallax-slider__bg{
+	position: ABSOLUTE;
+	background-image: url(/img/parallax_background.jpg);
+	width: 130%;
+	height: 300px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.title {
+	color: #ffffff;
+	font-size: 62px;
+	font-weight: 900;
+}
+.subtitle {
+	color: #ffffff;
+	font-size: 48px;
+}
+.text {
+	color: chartreuse;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+/* Настройка стилизации кнопок управления */
+.parallax-slider .swiper-button-prev::after,
+.parallax-slider .swiper-button-next::after{
+	color: aqua;
+	font-size: 80px;
+}
+
+/* Настройка положения кнопок управления - при необходимости */
+.parallax-slider .swiper-button-prev,
+.parallax-slider .swiper-button-next{
+	top: 1320px;
+}
+
+/* Настройка положения булетов - при необходимости */
+.parallax-slider .swiper-pagination{
+	bottom: 70px;
+}
+
+/* Настройка стилизации булетов */
+.parallax-slider .swiper-pagination-bullet{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+
+
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/nullstyle.css"> --> <!-- Обнуляющие стили -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Подключение стилей слайдера -->
+	<title>Slider Swiper</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+	<!-- Главный контейнер Слайдера -->
+	<div class="swiper">
+		<!-- Дополнительная ОБЯЗАТЕЛЬНАЯ обёртка -->
+		<div class="swiper-wrapper">
+			<!-- Слайды -->
+			<div class="swiper-slide">
+				<!-- Дополнительная обертка для изображения/контента  -->
+				<div class="image-slider__image">
+					<img src="img/1.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<!-- класс swiper-zoom-container указанный как второй для оболочки всей картинки/контента нужен для реализации увеличения изображения -->
+				<div class="image-slider__image swiper-zoom-container">
+					<img src="img/2.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/3.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/4.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/5.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/6.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/7.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/8.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/9.jpg" alt="">
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="image-slider__image">
+					<img src="img/10.jpg" alt="">
+				</div>
+			</div>
+			...
+		</div>
+		<!-- Нумерация страниц -->
+		<div class="swiper-pagination"></div>
+
+		<!-- Кнопки навигации -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- Полоса прокрутки -->
+		<div class="swiper-scrollbar"></div>
+	</div>
+
+
+
+
+
+	<!-- Параллакс Swiper Slider -->
+
+
+	<div class="parallax-slider swiper-container">
+		<div class="parallax-slider__bg" data-swiper-parallax="-23%">
+		</div>
+		<div class="parllax-slider__wrapper swiper-wrapper">
+			<div class="parallax-slider__slide swiper-slide">
+				<div class="title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2" data-swiper-parallax="-300">Slide 1</div>
+				<div class="subtitle"  data-swiper-parallax-opacity="0" data-swiper-parallax-duration="500" data-swiper-parallax="-200">Subtitle</div>
+				<div class="text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+						dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+						laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+						Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+						Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+						ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+						tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+					</p>
+				</div>
+			</div>
+			<div class="parallax-slider__slide swiper-slide">
+				<div class="title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2" data-swiper-parallax="-300">Slide 2</div>
+				<div class="subtitle"  data-swiper-parallax-opacity="0" data-swiper-parallax-duration="500" data-swiper-parallax="-200">Subtitle</div>
+				<div class="text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+						dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+						laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+						Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+						Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+						ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+						tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+					</p>
+				</div>
+			</div>
+			<div class="parallax-slider__slide swiper-slide">
+				<div class="title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2" data-swiper-parallax="-300">Slide 3</div>
+				<div class="subtitle"  data-swiper-parallax-opacity="0" data-swiper-parallax-duration="500" data-swiper-parallax="-200">Subtitle</div>
+				<div class="text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+						dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+						laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+						Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+						Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+						ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+						tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+
+		<!-- Кнопки навигации -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Подключение JS для слайдера -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+	<!-- Скрипт инициализации слайдера + настройки и параметры -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

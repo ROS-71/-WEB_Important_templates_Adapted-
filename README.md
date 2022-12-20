@@ -1,2 +1,2 @@
-# WEB_Responsive_Adapted_wildcard_block
-Блок-болванка для вставки с отзывчивостью - адаптирован с помощью media queries, имеется отдельный файл responsive.css для подключения.
+WEB_Block_Responsive_Adapted - Заготовки готовых блоков для вставки
+WEB_Slider_swiper_Adapted - Слайдер с параметрами + параллакс
