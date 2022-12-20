@@ -137,7 +137,7 @@ Flex элементу внутри которого находится слад�
 /* Настройка backround-image  - сама картинка указывается в html*/
 .parallax-slider__bg{
 	position: ABSOLUTE;
-	background-image: url(/img/parallax_background.jpg);
+	background-image: url(/WEB_Slider_swiper_Adapted/img/parallax_background.jpg);
 	width: 130%;
 	height: 300px;
 	-webkit-background-size: cover;
